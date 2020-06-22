@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sonthena`,
-    description: `My First Blog`,
+    description: `Weibens awesome Gatsby tutorial site.`,
     author: `@sonthena1301`,
   },
   plugins: [

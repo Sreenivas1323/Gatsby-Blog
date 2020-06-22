@@ -7,10 +7,11 @@ import MobileMenu from "components/MobileMenu"
 import ModeButton from "components/ModeButton"
 // Hooks
 import { useSiteConfigQuery } from "hooks/useSiteConfigQuery"
-// Context
-import { ModeContext } from "context/ModeProvider"
+//Context
+import { ModeContext } from "context/ModeProvider";
 // Styles
 import { Wrapper, Logo } from "./Header.styles"
+import ModeButton from "../ModeButton"
 
 const Header = ({ siteTitle = `` }) => {
   const siteConfig = useSiteConfigQuery()
@@ -25,7 +26,7 @@ const Header = ({ siteTitle = `` }) => {
       <Link to="/">
         <Logo src={siteConfig.logo.publicURL} alt={siteTitle} />
       </Link>
-      <ModeButton darkMode={darkMode} setDarkMode={setDarkMode} />
+      <ModeButton darkMode={darkMode} setDarkMode={serDarkMode} />
     </Wrapper>
   )
 }
